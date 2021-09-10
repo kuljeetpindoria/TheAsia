@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".CountryInfo">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Asia"
+        app:titleTextColor="@color/yellow" />
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/country_flag"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:text="Name"
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_toEndOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_flag"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/countryText"
+        android:padding="4dp"
+        android:text="Name"
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/capitalText"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_name"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:text="Capital"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/country_capital"
+        android:layout_toEndOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_name"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/capitalText"
+        android:padding="4dp"
+        android:text="Capital"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/regionText"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_capital"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:text="Region"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/country_region"
+        android:layout_toEndOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_capital"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/regionText"
+        android:padding="4dp"
+        android:text="Region"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/subregionText"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_region"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:text="Subregion"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/country_subregion"
+        android:layout_toEndOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_region"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/subregionText"
+        android:padding="4dp"
+        android:text="Subregion"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/populationText"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_subregion"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:text="Population"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/country_population"
+        android:layout_toEndOf="@id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_subregion"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/populationText"
+        android:padding="4dp"
+        android:text="Population"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="8dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/country_flag"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/countryText"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
+
+
+
+
